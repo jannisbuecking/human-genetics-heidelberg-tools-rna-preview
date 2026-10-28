@@ -17,3 +17,7 @@ The ribosome is a simplified 2D schematic using https://www.rcsb.org/structure/9
 The layout now measures the stable CSS small viewport (`100svh`) instead of using the toolbar-dependent `window.innerHeight` to choose between the horizontal scene and the stacked fallback. Toolbar-only resize events no longer rebuild the scene. Width changes, orientation changes, and real changes to the stable viewport still update the geometry. The fitting threshold reserves 200 pixels beyond the heading and measured card, allowing the horizontal scene to fit a normal phone with its toolbar expanded. Very short windows retain the accessible stacked layout. Genuine geometry updates preserve the position within or below the scene.
 
 Viewport unit reference: https://webkit.org/blog/12445/new-webkit-features-in-safari-15-4/
+
+## Test website 2: vertical RNA
+
+A separate vertical version is available at https://jannisbuecking.github.io/human-genetics-heidelberg-tools-rna-preview/vertical/ . Its source branch is https://github.com/jannisbuecking/human-genetics-heidelberg-tools/tree/test/rna-vertical . It keeps the same original top, tool information, colors, centered cards, and short sequence. It uses native vertical scrolling, upright labels, and the rotated translucent ribosome schematic. The horizontal website remains at the root URL.
